@@ -10,8 +10,8 @@ env:
     - KAFKA_HOSTNAME=localhost
     - DEBUG=true
   matrix:
-    - KAFKA_VERSION=0.8.2.2
-    - KAFKA_VERSION=0.9.0.1
+#    - KAFKA_VERSION=0.8.2.2
+#    - KAFKA_VERSION=0.9.0.1
     - KAFKA_VERSION=0.10.1.0
 
 before_install:

@@ -5,7 +5,7 @@ set -e
 set -u
 
 # Make a list of all non-vendored packages.
-PKGS=$(go list ./... | grep -v /vendor/ | grep -v /tools/ | grep -v /testhelpers/)
+PKGS=$(go list ./... | grep -v /vendor/ | grep -v /tools/ | grep -v /testhelpers/ | head -1)
 PKGS_DELIM=$(echo $PKGS | sed -e 's/ /,/g')
 
 echo "Check that the code meets quality standards"
